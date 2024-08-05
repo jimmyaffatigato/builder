@@ -5,6 +5,7 @@
     "bundle": true,
     "platform": "node",
     "external": ["esbuild"],
-    "minify": true
+    "minify": true,
+    "banner": { "js": "//builder v1.0.0 by jimmyaffatigato" }
   }
 }

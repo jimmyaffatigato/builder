@@ -13,19 +13,18 @@ async function start() {
   // Help Output
   if (argv[2] == "--help" || argv[2] == "--h") {
     const help = [
-      "builder v1.0.0 - Help",
+      "builder v1.0.0 - help",
       "Portable bundling script for `esbuild` with easy-access JSON options.",
       "`build.js` invokes the nearest `esbuild` installation with the options in `build-options.json`.",
-      "\nUsage:",
+      "",
+      "Usage:",
       "node build.js",
       "node build.js --watch",
       "node build.js --serve",
       "node build.js --help",
     ];
 
-    help.forEach((line) => {
-      console.log(line);
-    });
+    console.log(help.join("\n"));
     return;
   }
   console.log(`builder v1.0.0`);
