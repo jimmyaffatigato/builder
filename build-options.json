@@ -1,0 +1,13 @@
+{
+  "buildOptions": {
+    "entryPoints": ["src/index.ts"],
+    "outfile": "build.js",
+    "bundle": true,
+    "platform": "node",
+    "external": ["esbuild"],
+    "minify": true
+  },
+  "serveOptions": {
+    "servedir": "dist"
+  }
+}

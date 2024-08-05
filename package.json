@@ -1,0 +1,20 @@
+{
+  "name": "builder",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "Portable bundling script for `esbuild` with easy-access JSON options.",
+  "scripts": {
+    "build": "node build.js",
+    "watch": "npm run build -- --watch",
+    "serve": "npm run build -- --serve dist",
+    "recover": "esbuild src/index.ts --bundle --outfile=build.js --platform=node --external:esbuild"
+  },
+  "author": "Jimmy Affatigato",
+  "license": "ISC",
+  "dependencies": {
+    "esbuild": "^0.23.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.1.0"
+  }
+}
