@@ -6,8 +6,7 @@
   "scripts": {
     "build": "node build.js",
     "watch": "npm run build -- --watch",
-    "serve": "npm run build -- --serve dist",
-    "recover": "esbuild src/index.ts --bundle --outfile=build.js --platform=node --external:esbuild"
+    "serve": "npm run build -- --serve"
   },
   "author": "Jimmy Affatigato",
   "license": "ISC",

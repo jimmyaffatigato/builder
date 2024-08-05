@@ -7,17 +7,6 @@ interface OptionsJSON {
   serveOptions: esbuild.ServeOptions;
 }
 
-const help = [
-  "builder v1.0.0 - Help",
-  "Portable bundling script for `esbuild` with easy-access JSON options.",
-  "`build.js` invokes the nearest `esbuild` installation with the options in `build-options.json`.",
-  "\nUsage:",
-  "node build.js\t...\tBuild",
-  "node build.js --watch\t...\tWatch",
-  "node build.js --serve\t...\tServe",
-  "node build.js --help\t...\tHelp",
-];
-
 start();
 
 async function start() {

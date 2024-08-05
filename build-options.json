@@ -6,8 +6,5 @@
     "platform": "node",
     "external": ["esbuild"],
     "minify": true
-  },
-  "serveOptions": {
-    "servedir": "dist"
   }
 }
